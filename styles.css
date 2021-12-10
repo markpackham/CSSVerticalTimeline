@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: #f3f3f3;
+  background-color: hsl(0, 0%, 95%);
   color: var(--text-color);
 }
 
@@ -29,8 +29,8 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.0625rem solid var(--subdued-color);
-  padding: .25rem;
-  margin: var(--group-header-spacing);
+  padding-bottom: .25rem;
+  margin-bottom: var(--group-header-spacing);
 }
 
 .group-date {
