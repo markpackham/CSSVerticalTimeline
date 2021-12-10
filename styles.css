@@ -28,15 +28,17 @@ body {
   gap: 1rem;
 }
 
-/* using "before" saves us from having to worry about the z-index */
 .notification-grid::before {
   content: "";
   position: absolute;
   grid-column: 1/2;
-  grid-row: 1/-1;
-  background-color: red;
-  width: 100%;
+  background-color: var(--subdued-color);
+  width: 0.125rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   height: 100%;
+  z-index: -1;
 }
 
 .notification-card {
