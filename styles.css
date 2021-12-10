@@ -22,8 +22,21 @@ body {
 
 .notification-grid {
   display: grid;
+  position: relative;
   grid-template-columns: 3.125rem 1fr;
+  grid-auto-rows: auto;
   gap: 1rem;
+}
+
+/* using "before" saves us from having to worry about the z-index */
+.notification-grid::before {
+  content: "";
+  position: absolute;
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  background-color: red;
+  width: 100%;
+  height: 100%;
 }
 
 .notification-card {
