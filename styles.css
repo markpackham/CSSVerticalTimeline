@@ -17,6 +17,12 @@ body {
   color: var(--text-color);
 }
 
+.group-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.0625rem solid var(--subdued-color);
+}
+
 .avatar {
   position: relative;
 }
