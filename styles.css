@@ -4,8 +4,46 @@
   box-sizing: border-box;
 }
 
+:root {
+  --subdued-color: #777;
+  --text-color: #555;
+}
+
+body {
+  background-color: #f3f3f3;
+  color: var(--text-color);
+}
+
 .notification-grid {
   display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.notification-card {
+  background-color: white;
+  border: 1px solid var(--subdued-color);
+  border-radius: .25rem;
+}
+
+.notification-header {
+  display: flex;
+}
+
+.notification-title {
+  flex-grow: 1;
+}
+
+.notification-time {
+  color: var(--subdued-color);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.icon>path {
+  fill: var(--subdued-color);
 }
 
 img {
